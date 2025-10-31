@@ -83,6 +83,44 @@ h1 {
   text-shadow: 0 0 10px #ff66cc;
 }
 
+/* Bottom scrolling ticker */
+.bottom-ticker {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+  padding: 10px 0;
+  z-index: 999;
+  text-align: center;
+}
+
+.bottom-ticker span {
+  display: inline-block;
+  white-space: nowrap;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Comic Sans MS", sans-serif;
+  animation: scrollText 15s linear infinite, rainbowText 5s linear infinite;
+}
+
+/* Scrolling animation */
+@keyframes scrollText {
+  0%   { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+/* Rainbow color cycling */
+@keyframes rainbowText {
+  0%   { color: red; }
+  14%  { color: orange; }
+  28%  { color: yellow; }
+  42%  { color: green; }
+  57%  { color: blue; }
+  71%  { color: indigo; }
+  85%  { color: violet; }
+  100% { color: red; }
+}
+
 /* Interesting Photos exclusive style */
 
 /* interesting photos page */
