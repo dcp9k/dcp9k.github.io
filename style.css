@@ -45,7 +45,7 @@ h1 {
   color: #ff99dd;
   text-decoration: none;
   font-weight: bold;
-  font-size: 22px;
+  font-size: 30px;
   cursor: pointer;
 }
 
@@ -53,6 +53,7 @@ h1 {
 .link:hover {
   color: #ffffff;
   text-shadow: 0 0 10px #ff66cc;
+  animation: rainbow 10s linear infinite;
 }
 
 /* Diamond-ish placement */
